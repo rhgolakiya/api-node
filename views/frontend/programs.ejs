@@ -1,0 +1,33 @@
+<%- include('../includes/head.ejs') %>
+<link rel="stylesheet" href="/css/program.css">
+</head>
+
+<body>
+<%- include('../includes/navigation.ejs') %>
+
+<main>
+
+        <div class="grid">
+            <% for (let program of programs) { %>
+                <article class="card product-item">
+                    <header class="card__header">
+                        <h1 class="product__title">
+                            <%= program.title %>
+                        </h1>
+                    </header>
+                    <div class="card__image">
+                        <img class="img-fluid" src="<%= program.image %>" alt="<%= program.title %>">
+                    </div>
+                    <div class="card__content">
+                        <p class="product__description">
+                            <%= program.description %>
+                        </p>
+                    </div>
+                    <div class="card__actions">
+                        <a href="/programs/<%= program._id %>" class="btn">Details</a>
+                    </div>
+                </article>
+            <% } %>
+        </div>
+</main>
+<%- include('../includes/end.ejs') %>

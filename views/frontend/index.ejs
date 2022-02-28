@@ -1,0 +1,97 @@
+<%- include('../includes/head.ejs') %>
+<link rel="stylesheet" href="/css/main.css">
+
+</head>
+
+<body>
+<%- include('../includes/navigation.ejs') %>
+<hr>
+
+
+<!-- Navbar -->
+
+
+<!-- New start -->
+<div class="container-fluid c2">
+    <br>
+    <br>
+    <div class="row d-flex   align-items-center">
+
+        <div class="col-md-4 offset-md-2">
+            <h1>Hello, viewers!</h1>
+            <p>Welcome in This Website ! Explore our new content. Feel free to share your queries with us</p>
+            <p>Drop your queries at <a class="text-info text-decoration-none" href="mailto:ridham.golakiya@infyom.com">ridham.golakiya@infyom.com</a></p>
+
+        </div>
+        <div class="col-md-6">
+            <img class="img-fluid" src="https://pbs.twimg.com/profile_images/1407210504515317761/SsHO5t6O_400x400.jpg">
+        </div>
+
+    </div>
+    <br>
+    <br>
+</div>
+<!-- New start -->
+
+<!-- Sign up page -->
+<div class="container shadow" id="contact" style="padding: 1%; margin-top: 2%;">
+    <div class="row " style="margin-top: 8%;">
+
+        <div class="col-md-11 col-11 p-0 d-flex justify-content-center">
+            <form class="col-6" action="/" method="POST">
+
+                <h2>Fill the form to connect with Us</h2>
+                <div class="mb-3 mt-md-5">
+                    <label for="name" class="form-label"><b>Name</b></label>
+                    <input type="text" class="form-control p-md-2 mt-md-2 Required border-radius" name="name" id="name"
+                           placeholder="Name"
+                           aria-describedby="emailHelp">
+
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"><b>Email address</b></label>
+                    <input type="email" class="form-control p-md-2 mt-md-2 border-radius" name="email" id="exampleInputEmail1"
+                           placeholder="email@company.com" aria-describedby="emailHelp">
+
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label"><b>Queries</b></label>
+                    <input type="text" class="form-control p-md-2 mt-md-2 border-radius" name="queries" id="exampleInputPassword1"
+                           placeholder="Queries">
+                </div>
+
+                <button type="submit" class="btn px-md-4 py-md-2 r9">Submit</button>
+            </form>
+        </div>
+    </div>
+    <br>
+    <br>
+</div>
+<!-- Footer -->
+<div class="container-fluid c1">
+
+    <div class="container " style="margin-top:4%;padding: 2%;">
+
+        <div>
+            <div class="row d-flex justify-content-around c13">
+                <p class=" col-md-5"> All rights reserved © 2022 Ridham Golakiya. </p>
+                <div class="col-md-2 ml-md-0 mr-md-0 mr-2  d-flex justify-content-evenly mt-md-1 ">
+                    <i class="fab fa-facebook-f "></i>
+                    <i class="fab fa-twitter "></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube "></i>
+                </div>
+                <p class=" col-md-2  mt-md-0 mt-2">Privacy Policy</p>
+                <p class=" col-md-2 ">Terms & Conditions</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Script -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></script>
+
+
+<%- include('../includes/end.ejs') %>

@@ -1,0 +1,18 @@
+<%- include('../includes/head.ejs') %>
+
+</head>
+
+<body>
+
+<div class="d-flex justify-content-center">
+<main class="text-center">
+    <h1><%= program.title %></h1>
+    <hr>
+    <div class="image">
+        <img src="<%= program.image %>" alt="<%= program.title %>">
+    </div>
+    <%= console.log(program.code)%>
+    <p class="text-start"><%- program.code.replace(/(\r\n)/g, '</br>'); %></p>
+</main>
+</div>
+<%- include('../includes/end.ejs') %>

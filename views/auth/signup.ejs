@@ -1,0 +1,28 @@
+<%- include('../includes/head.ejs') %>
+
+<div class="col-md-11 col-11 p-0 d-flex justify-content-center">
+    <form class="col-6" action="/signup" method="POST">
+
+        <div class="mb-3 mt-md-5">
+            <label for="name" class="form-label"><b>Name</b></label>
+            <input type="text" class="form-control p-md-2 mt-md-2 Required border-radius" name="name" id="name"
+                   placeholder="Name"
+                   aria-describedby="emailHelp">
+
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label"><b>Email address</b></label>
+            <input type="email" class="form-control p-md-2 mt-md-2 border-radius" name="email" id="exampleInputEmail1"
+                   placeholder="email@company.com" aria-describedby="emailHelp">
+
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label"><b>Password</b></label>
+            <input type="password" class="form-control p-md-2 mt-md-2 border-radius" name="password" id="exampleInputPassword1"
+                   placeholder="Password">
+        </div>
+
+        <button type="submit" class="btn px-md-4 py-md-2 r9">Submit</button>
+    </form>
+</div>
+<%- include('../includes/end.ejs') %>

@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-primary ">
+
+    <div class="container-fluid col-8 text-dark ">
+
+        <a class="navbar-brand  text-dark " id="text-end" href="/"><b>Ridham Golakiya</b></a>
+        <button class="navbar-toggler" style="background: black;" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse  navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav col-md-5 col-12 d-flex justify-content-evenly  ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active text-dark" aria-current="page" href="/"><b class="r4">Home</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark " href="/programs"><b>programs</b></a>
+                </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-dark " href="/admin/add-program"><b>Add Program</b></a>
+                    </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-dark " href="/contact"><b>Contact</b></a>
+                </li>
+            </ul>
+
+            <a class="<%= path === '/login' ? 'active' : '' %> nav-link text-dark" href="/login">Login</a>
+            <a class="<%= path === '/signup' ? 'active' : '' %> nav-link  text-dark" href="/signup">signup</a>
+        </div>
+    </div>
+
+</nav>
