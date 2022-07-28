@@ -2,7 +2,7 @@ require('dotenv').config();
 require('./database/connection');
 const express = require('express');
 const app = express();
-const port = process.env.port || 5000;
+const port = process.env.port || 3000;
 const path = require('path');
 const session = require('express-session');
 const flash = require("connect-flash");
