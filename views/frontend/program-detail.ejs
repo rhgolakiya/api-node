@@ -6,13 +6,22 @@
 
 <div class="d-flex justify-content-center">
 <main class="text-center">
-    <h1><%= program.title %></h1>
+    <h1><%= program.title %>  <button id="copy" onclick="copy()">Copy text</button></h1>
     <hr>
-    <div class="image">
-        <img src="<%= program.image %>" alt="<%= program.title %>">
+<!--    <div class="image">-->
+<!--        <img src="<%= program.image %>" alt="<%= program.title %>">-->
+<!--    </div>-->
+    <div>
+        <p class="text-start" id="copy-my-contents"><%- program.description.replace(/(\r\n)/g, '</br>'); %></p>
     </div>
-    <%= console.log(program.code)%>
-    <p class="text-start"><%- program.code.replace(/(\r\n)/g, '</br>'); %></p>
 </main>
 </div>
+<script>
+    const range = document.createRange();
+    range.selectNode(document.getElementById("a"));
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(range);
+    document.execCommand("copy");
+    window.getSelection().removeAllRanges();
+</script>
 <%- include('../includes/end.ejs') %>

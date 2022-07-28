@@ -4,15 +4,15 @@ const Schema = mongoose.Schema;
 const programSchema = new Schema({
     title:{
         type:String
-    },
-    image: {
-        type: String,
-        required: true
-    },
+     },
+    // image: {
+    //     type: String,
+    //     required: true
+    // },
     description:{
         type:String,
     },
-    code:{
+    name:{
         type:String,
     }
 })

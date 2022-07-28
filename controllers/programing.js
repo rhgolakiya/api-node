@@ -59,7 +59,6 @@ exports.programDetails = (req, res, next) => {
     const id = req.params.id;
     Program.findById(id)
         .then(program => {
-            console.log(program)
             res.render('frontend/program-detail', {
                 program: program,
                 pageTitle: program.title,

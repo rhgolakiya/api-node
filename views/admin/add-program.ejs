@@ -1,7 +1,7 @@
 <%- include('../includes/head.ejs') %>
 
 <div class="col-md-11 col-11 p-0 d-flex justify-content-center">
-    <form class="col-6" action="/admin/add-program" method="POST">
+    <form class="col-6" action="/add-program" method="POST">
 
         <div class="form-control mb-3">
             <label for="title" class="form-label">Title</label>
@@ -11,14 +11,20 @@
                     id="title">
         </div>
 
+<!--        <div class="form-control mb-3">-->
+<!--            <label for="image" class="form-label">image</label>-->
+<!--            <input class="form-control p-md-2 mt-md-2 border-radius"-->
+<!--                   type="text"-->
+<!--                   name="image"-->
+<!--                   id="image">-->
+<!--        </div>-->
         <div class="form-control mb-3">
-            <label for="image" class="form-label">image</label>
-            <input class="form-control p-md-2 mt-md-2 border-radius"
-                   type="text"
-                   name="image"
-                   id="image">
+            <label for="code" class="form-label">Name</label>
+            <textarea class="form-control p-md-2 mt-md-2 border-radius"
+                      type="text"
+                      name="code"
+                      id="code"></textarea>
         </div>
-
         <div class="form-control mb-3">
             <label for="description" class="form-label">description</label>
             <textarea class="form-control p-md-2 mt-md-2 border-radius"
@@ -26,13 +32,7 @@
                    name="description"
                       id="description"></textarea>
         </div>
-        <div class="form-control mb-3">
-            <label for="code" class="form-label">Code</label>
-            <textarea class="form-control p-md-2 mt-md-2 border-radius"
-                      type="text"
-                      name="code"
-                      id="code"></textarea>
-        </div>
+
 
         <button type="submit" class="btn px-md-4 py-md-2 r9">Submit</button>
     </form>
